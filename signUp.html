@@ -3,13 +3,22 @@
 <head>
     <!-- CSS file -->
     <link rel="stylesheet"
-        type="text/css" href="">
+        type="text/css" href="formStyling.css">
     <h1>Welcome to eLibrary!!</h1>
     <h2>Sign up to become a bookworm!</h2>
+    <style>
+        .center {
+            margin: auto;
+            width: 40%;
+            border: 3px solid #ffffff;
+            padding: 10px;
+          }
+        </style>
 </head>
 <body>
+    <div class="center">
     <!--Form for Sign up-->
-    <form action="home_page.html">
+    <form style = "text-align: center;"action="home_page.html">
         <label for="fname">First Name:</label><br>
         <input type="text" id="fname" name="fname"><br>
         <label for="lname">Last Name:</label><br>
@@ -20,6 +29,6 @@
         <input type="password" id="password" name="password"><br>
         <input type="submit" value="Sign Up"><br>
     </form>
-    
+    </div>
 </body>
 </html>
