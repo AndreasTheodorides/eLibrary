@@ -2,33 +2,64 @@
 
 <head>
     <!-- CSS file -->
-    <link rel="stylesheet"
-        type="text/css" href="formStyling.css">
-    <h1>Welcome to eLibrary!!</h1>
-    <h2>Sign up to become a bookworm!</h2>
+    <link rel="stylesheet" type="text/css" href="formStyling.css">
     <style>
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
         .center {
             margin: auto;
             width: 40%;
             border: 3px solid #ffffff;
             padding: 10px;
-          }
-        </style>
+        }
+    </style>
 </head>
+
 <body>
+    <div class="topnav">
+        <a href="/home/andreas/Desktop/Web Developing/eLibrary/logIn.html">Log In</a>
+        <a class="active" href="/home/andreas/Desktop/Web Developing/eLibrary/signUp.html">Sign In</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+    <h1>Welcome to eLibrary!!</h1>
+    <h2>Sign up to become a bookworm!</h2>
     <div class="center">
-    <!--Form for Sign up-->
-    <form style = "text-align: center;"action="home_page.html">
-        <label for="fname">First Name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last Name:</label><br>
-        <input type="text" id="lname" name="lname"><br>
-        <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username"><br>
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password"><br>
-        <input type="submit" value="Sign Up"><br>
-    </form>
+        <!--Form for Sign up-->
+        <form style="text-align: center;" action="home_page.html">
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <input type="submit" value="Sign Up"><br>
+        </form>
     </div>
 </body>
+
 </html>
